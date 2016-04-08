@@ -1,4 +1,4 @@
-#!/bin/sh
+bg#!/bin/sh
 
 # taken from  https://wiki.archlinux.org/index.php/Xinitrc
 session=${1:-xfce}
@@ -54,7 +54,15 @@ fi
 
 # Launch redshift in the background
 redshift &
-sh ~/.fehbg &
+sh ~/wallpaper.sh &
+
+
+#setup left monitor / head
+xrandr --output DVI-0 --off
+xrandr --output DVI-0 --auto --left-of DisplayPort-0
+
+# Start conky
+conky -dc ~/.config/conky/conky.conf &
 
 case $session in
     awesome           ) exec awesome;;
