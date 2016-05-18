@@ -61,6 +61,9 @@ sh ~/wallpaper.sh &
 xrandr --output DVI-0 --off
 xrandr --output DVI-0 --auto --left-of DisplayPort-0
 
+#start tint
+#tint2 -c /usr/share/tint2/icon_only_2.tint2rc
+
 # Start conky
 conky -dc ~/.config/conky/conky.conf &
 

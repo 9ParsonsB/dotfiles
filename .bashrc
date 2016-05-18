@@ -71,6 +71,8 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 export EDITOR="nano"
 
+export XAUTHORITY=~/.Xauthority
+
 screenfetch
 cowsay -f tux $(fortune)
 setprompt
