@@ -64,7 +64,7 @@ alias xmod='chmod'
 alias fixsteam='find ~/.steam/root/ \( -name "libgcc_s.so*" -o -name "libstdc++.so*" -o -name "libxcb.so*" \) -print -delete'
 alias fixsteam2='find ~/.local/share/Steam/ \( -name "libgcc_s.so*" -o -name "libstdc++.so*" -o -name "libxcb.so*" \) -print -delete'
 
-alias f='find / 2>&1 | grep $1'
+alias f='find / 2>&1 ! -readable -prune | grep $1'
 
 # make ls have colour
 alias ls='ls --color=auto'

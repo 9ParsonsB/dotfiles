@@ -33,7 +33,7 @@ floating_modifier $mod
 bindsym $mod+End exec xrandr --output DVI-0 --off
 
 #bind key to enable left monitor
-bindsym $mod+Home exec xrandr --output DVI-0 --auto --left-of DisplayPort-3
+bindsym $mod+Home exec xrandr --output DVI-0 --auto --left-of DisplayPort-1
 
 # start a terminal
 bindsym $mod+Return exec konsole
